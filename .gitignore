@@ -1,0 +1,7 @@
+/.idea
+
+/MyTomcat/.settings
+
+
+/MyTomcat/bin
+/MyTomcat/*.iml

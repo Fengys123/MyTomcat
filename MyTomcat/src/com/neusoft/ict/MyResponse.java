@@ -16,7 +16,7 @@ public class MyResponse {
 				.append("Content-Type: text/html\n")
 				.append("\r\n")
 				.append("<html><body>")
-				.append("content")
+				.append(content)
 				.append("</body></html>");
 		
 		outputStream.write(httpReponse.toString().getBytes());
