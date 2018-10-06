@@ -26,7 +26,6 @@ public class MyTomcat {
 			serverSocket = new ServerSocket(port);
 			System.out.println("MyTomcat is starting...");
 			while(true){
-				
 				Socket socket = serverSocket.accept();
 				InputStream inputStream = socket.getInputStream();
 				OutputStream outputStream = socket.getOutputStream();
@@ -60,7 +59,7 @@ public class MyTomcat {
 	private void dispatch(MyRequest myRequest, MyResponse myResponse){
 		
 		String clazz = urlServletMap.get(myRequest.getUrl());
-		
+
 		try {
 			Class<MyServlet> myServletClass = (Class<MyServlet>)Class.forName(clazz);
 			MyServlet myServlet = myServletClass.newInstance();

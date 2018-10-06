@@ -10,5 +10,6 @@ public class ServletMappingConfig {
 	static{
 		servletMappingList.add(new ServletMapping("fingGirl", "/girl", "com.neusoft.ict.FindGirlServlet"));
 		servletMappingList.add(new ServletMapping("helloWorld", "/world", "com.neusoft.ict.HelloWorldServlet"));
+		servletMappingList.add(new ServletMapping("favicon.ico", "/favicon.ico", "com.neusoft.ict.HelloWorldServlet"));
 	}
 }
