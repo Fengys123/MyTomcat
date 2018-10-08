@@ -8,6 +8,7 @@ public class Faviconico extends MyServlet{
     public void doGet(MyRequest myRequest, MyResponse myResponse) {
         try {
             //myResponse.write("get Faviconico...");
+           // myResponse.write();
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -17,6 +18,7 @@ public class Faviconico extends MyServlet{
     public void doPost(MyRequest myRequest, MyResponse myResponse) {
         try {
             //myResponse.write("get Faviconico...");
+//           / myResponse.write();
         } catch (Exception e) {
             e.printStackTrace();
         }
